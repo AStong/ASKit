@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIView+ASDotBlock.h"
+#import "UITextField+ASDotBlock.h"
 @interface ViewController ()
 
 @end
@@ -19,15 +20,21 @@
     
    
     [UIView as_viewWithBlock:^(UIView *maker) {
-        maker.frame = CGRectMake(0, 0, 100, 100);
-        maker.as_backgroundColor([UIColor cyanColor]);
+        maker.as_frame(0, 0, 100, 100)
+        .as_backgroundColor([UIColor cyanColor])
+        .as_alpha(.5);
         [self.view addSubview:maker];
     }];
     
-    [UITextField as_viewWithBlock:^(UIView *maker) {
-        maker.frame = CGRectMake(100, 64, 100, 40);
-        maker.as_backgroundColor([UIColor orangeColor]);
-     
+
+    
+    [UITextField as_fieldWithBlock:^(UITextField *maker) {
+        maker.as_backgroundColor([UIColor orangeColor])
+        .as_frame(0,120,100,50)
+        .as_alpha(0.3);
+        
+    
+        
         [self.view addSubview:maker];
     }];
 }

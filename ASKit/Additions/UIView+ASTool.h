@@ -1,5 +1,5 @@
 //
-//  UIView+ASExtension.h
+//  UIView+ASTool.h
 //  ASKit
 //
 //  Created by ASong on 2017/9/7.
@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (ASDotBlock)
-
+@interface UIView (ASTool)
 
 /**
- 通过block构建View
-
+ 通过block构建UIView
+ 
  @param block 用于构建view的block
  @return UIView
  */
@@ -22,15 +21,9 @@
 
 
 /**
- 设置视图frame
+ 获取视图所在的控制器
+
+ @return 如果没有,返回为 nil
  */
-- (UIView *(^)(CGFloat, CGFloat, CGFloat ,CGFloat))as_frame;
-
-/**
- 设置视图背景色
- */
-- (UIView *(^)(UIColor *))as_backgroundColor;
-
-
-- (UIView *(^)(CGFloat))as_alpha;
+- (UIViewController *)as_viewController;
 @end

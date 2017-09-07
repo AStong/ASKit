@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		943090101F61426D00894B05 /* UITextField+ASDotBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 9430900F1F61426D00894B05 /* UITextField+ASDotBlock.m */; };
+		943090141F614DCF00894B05 /* UIView+ASTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 943090131F614DCF00894B05 /* UIView+ASTool.m */; };
 		946617551F612B9F007B621E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 946617541F612B9F007B621E /* AppDelegate.m */; };
 		946617581F612B9F007B621E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 946617571F612B9F007B621E /* ViewController.m */; };
 		9466175B1F612B9F007B621E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946617591F612B9F007B621E /* Main.storyboard */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9430900E1F61426D00894B05 /* UITextField+ASDotBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+ASDotBlock.h"; sourceTree = "<group>"; };
+		9430900F1F61426D00894B05 /* UITextField+ASDotBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ASDotBlock.m"; sourceTree = "<group>"; };
+		943090121F614DCF00894B05 /* UIView+ASTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ASTool.h"; sourceTree = "<group>"; };
+		943090131F614DCF00894B05 /* UIView+ASTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ASTool.m"; sourceTree = "<group>"; };
 		946617501F612B9F007B621E /* ASKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		946617541F612B9F007B621E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		946617561F612B9F007B621E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -81,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		943090111F614D4B00894B05 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				943090121F614DCF00894B05 /* UIView+ASTool.h */,
+				943090131F614DCF00894B05 /* UIView+ASTool.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
 		946617471F612B9F007B621E = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +119,7 @@
 		946617521F612B9F007B621E /* ASKit */ = {
 			isa = PBXGroup;
 			children = (
+				943090111F614D4B00894B05 /* Additions */,
 				946617891F612FD3007B621E /* UI */,
 				946617881F612F96007B621E /* AppDelegate.h */,
 				946617541F612B9F007B621E /* AppDelegate.m */,
@@ -141,6 +157,8 @@
 			children = (
 				9466178A1F613067007B621E /* UIView+ASDotBlock.h */,
 				9466178B1F613067007B621E /* UIView+ASDotBlock.m */,
+				9430900E1F61426D00894B05 /* UITextField+ASDotBlock.h */,
+				9430900F1F61426D00894B05 /* UITextField+ASDotBlock.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -280,6 +298,8 @@
 			files = (
 				9466178C1F613067007B621E /* UIView+ASDotBlock.m in Sources */,
 				946617581F612B9F007B621E /* ViewController.m in Sources */,
+				943090141F614DCF00894B05 /* UIView+ASTool.m in Sources */,
+				943090101F61426D00894B05 /* UITextField+ASDotBlock.m in Sources */,
 				946617631F612B9F007B621E /* main.m in Sources */,
 				946617551F612B9F007B621E /* AppDelegate.m in Sources */,
 			);

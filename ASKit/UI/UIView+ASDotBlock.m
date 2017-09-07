@@ -18,6 +18,12 @@
 }
 
 
+-(UIView *(^)(CGFloat, CGFloat, CGFloat, CGFloat))as_frame{
+    return ^id(CGFloat x, CGFloat y, CGFloat weith, CGFloat height){
+        self.frame = CGRectMake(x, y, weith, height);
+        return self;
+    };
+}
 
 -(UIView *(^)(UIColor *))as_backgroundColor{
     return ^id(UIColor *color){
