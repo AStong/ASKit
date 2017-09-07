@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "UIView+ASDotBlock.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+   
+    [UIView as_viewWithBlock:^(UIView *maker) {
+        maker.frame = CGRectMake(0, 0, 100, 100);
+        maker.as_backgroundColor([UIColor cyanColor]);
+        [self.view addSubview:maker];
+    }];
+    
+    [UITextField as_viewWithBlock:^(UIView *maker) {
+        maker.frame = CGRectMake(100, 64, 100, 40);
+        maker.as_backgroundColor([UIColor orangeColor]);
+     
+        [self.view addSubview:maker];
+    }];
 }
 
 

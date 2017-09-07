@@ -15,6 +15,7 @@
 		946617631F612B9F007B621E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 946617621F612B9F007B621E /* main.m */; };
 		9466176D1F612B9F007B621E /* ASKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9466176C1F612B9F007B621E /* ASKitTests.m */; };
 		946617781F612B9F007B621E /* ASKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 946617771F612B9F007B621E /* ASKitUITests.m */; };
+		9466178C1F613067007B621E /* UIView+ASDotBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 9466178B1F613067007B621E /* UIView+ASDotBlock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		946617501F612B9F007B621E /* ASKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		946617531F612B9F007B621E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		946617541F612B9F007B621E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		946617561F612B9F007B621E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		946617571F612B9F007B621E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -51,6 +51,9 @@
 		946617731F612B9F007B621E /* ASKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		946617771F612B9F007B621E /* ASKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASKitUITests.m; sourceTree = "<group>"; };
 		946617791F612B9F007B621E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		946617881F612F96007B621E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9466178A1F613067007B621E /* UIView+ASDotBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ASDotBlock.h"; sourceTree = "<group>"; };
+		9466178B1F613067007B621E /* UIView+ASDotBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ASDotBlock.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +104,8 @@
 		946617521F612B9F007B621E /* ASKit */ = {
 			isa = PBXGroup;
 			children = (
-				946617531F612B9F007B621E /* AppDelegate.h */,
+				946617891F612FD3007B621E /* UI */,
+				946617881F612F96007B621E /* AppDelegate.h */,
 				946617541F612B9F007B621E /* AppDelegate.m */,
 				946617561F612B9F007B621E /* ViewController.h */,
 				946617571F612B9F007B621E /* ViewController.m */,
@@ -130,6 +134,15 @@
 				946617791F612B9F007B621E /* Info.plist */,
 			);
 			path = ASKitUITests;
+			sourceTree = "<group>";
+		};
+		946617891F612FD3007B621E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9466178A1F613067007B621E /* UIView+ASDotBlock.h */,
+				9466178B1F613067007B621E /* UIView+ASDotBlock.m */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9466178C1F613067007B621E /* UIView+ASDotBlock.m in Sources */,
 				946617581F612B9F007B621E /* ViewController.m in Sources */,
 				946617631F612B9F007B621E /* main.m in Sources */,
 				946617551F612B9F007B621E /* AppDelegate.m in Sources */,
